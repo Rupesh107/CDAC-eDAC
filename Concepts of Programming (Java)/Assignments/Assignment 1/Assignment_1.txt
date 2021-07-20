@@ -155,13 +155,18 @@ Output:
 10. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers received from command line?
 // double x = Double.parseDouble(args[0]);
 Ans.
-public static void main(String args[]){
-	double a=Double.parseDouble(args[0]);
-	double b=Double.parseDouble(args[1]);
-	double add=a+b;
-	double sub=a-b;
-	double mul=a*b;
-	double remainder=a%b;
-	System.out.println("Addition= "+add+"Subtraction= "+sub+"Multiplication= "+mul+"Remainder= "+remainder);
+public class Q10Arithmetic {
+
+    public static void main(String[] args) {
+        float a = Float.parseFloat(args[0]);
+        float b = Float.parseFloat(args[1]);
+
+        float add = a + b;
+        float sub = a - b;
+        float div = a / b;
+        float mul = a * b;
+
+        System.out.println("Add: " + add + "\nSub: " + sub + "\nDiv: " + div + "\nMul: " + mul);
+	}
 }
 ---------------------------------------------------------------------------------------
