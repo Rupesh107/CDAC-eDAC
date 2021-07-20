@@ -1,0 +1,167 @@
+
+
+Name	  : Rupesh Dhotre
+PRN		  : 210540181063
+Lab Batch : 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+----------------------------------------------
+******* Java Assignment Section- 1 *********
+----------------------------------------------
+
+
+
+3. Write a Java program to print 'Hello' on screen and then print your name on a separate line. 
+
+Ans.
+public class Q3HelloName1 {
+
+		public static void main(String[] args) {
+				System.out.println("Hello\nRupesh");
+	 }
+}
+~~~~~~~~~~~~~~~~
+Output:
+Hello 
+Rupesh
+---------------------------------------------------------------------------------------
+
+4. Write a Java program to print 'Hello' on screen and then print your name on the same line. 
+
+Ans.
+
+public class Q4HelloName2 {
+	
+		public static void main(String[] args) {
+				System.out.println("Hello Rupesh");
+	 }
+}
+~~~~~~~~~~~~~~~~
+Output:
+Hello Rupesh
+---------------------------------------------------------------------------------------
+
+5. Write a program to take "name" as command line argument and print "Hello "+<name> on the console?
+
+Ans.
+public class Q5HelloName3 {
+   public static void main(String args[]) {
+      for(int i = 0; i<args.length; i++) {
+         System.out.println("args[" + i + "]: " + args[i]);
+      }
+   }
+}
+---------------------------------------------------------------------------------------
+
+6. Write a java program to take three numbers from command line and print the average ?
+>> java Avg 5 6 4
+Average=5
+
+Ans.
+class Q6Avg{
+ public static void main(String args[]){
+  int a=Integer.parseInt(args[0]);
+  int b=Integer.parseInt(args[1]);
+  int c=Integer.parseInt(args[2]);
+  float d= (a+b+c)/3;
+ System.out.println(d);
+  }
+} 
+~~~~~~~~~~~~~~~~
+Output:
+5 6 4
+Average=5
+---------------------------------------------------------------------------------------
+
+7. Write a java program to calculate simple interest, get the required inputs from command line ?
+
+Ans.
+class Q7SI{
+ public static void main(String args[]){
+  double pricipal=Double.parseDouble(args[0]);
+  double rate=Double.parseDouble(args[1]);
+  double time=Double.parseDouble(args[2]);
+  double SI= (pricipal*rate*time)/100;
+ System.out.println("SimpleInterest= "+SI);
+  }
+} 
+---------------------------------------------------------------------------------------
+
+8. Write a java program to convert temperature from celsius to fahrenheit, get input from command line ?
+	Hint : F = (9*C/5) + 32
+Ans.
+import java.util.Scanner;
+public class Q8FahnDeg {
+	public static void main(String args[]){
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter temperature in Celcius");
+		double C = sc.nextDouble();
+		double F = (((9*C)/5)+32);
+
+		System.out.println("Temperature in Fahrenheit is " + F);
+		sc.close();
+	}
+}
+~~~~~~~~~~~~~~~~
+Output:
+Enter temperature in Celcius
+12
+Temperature in Fahrenheit is 53.6
+---------------------------------------------------------------------------------------
+
+9. Write a java program to print following face(pattern) on screen - 
+
+ +"""""+                                                 
+[| o o |]                                                
+ |  ^  |                                                 
+ | '-' |                                                 
+ +-----+
+ 
+Ans.
+public class Q9Pattern {
+	public static void main (String[] args) {
+		System.out.println(" +\"\"\"\"\"+");
+		System.out.println("[| o o |]");
+		System.out.println(" |  ^  | ");
+		System.out.println(" | '-' | ");
+		System.out.println(" +-----+ ");
+	}
+}
+
+/*OR
+public class Q9Pattern {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(" +\"\"\"\"\"+ "
+				+ "\n[| o o |]"
+				+ "\n |  ^  | "
+				+ "\n | '-' |"
+				+ "\n +-----+");
+	}		
+}
+*/
+~~~~~~~~~~~~~~~~
+Output:
+ +"""""+
+[| o o |]
+ |  ^  | 
+ | '-' | 
+ +-----+ 
+---------------------------------------------------------------------------------------
+ 
+10. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers received from command line?
+// double x = Double.parseDouble(args[0]);
+Ans.
+public static void main(String args[]){
+	double a=Double.parseDouble(args[0]);
+	double b=Double.parseDouble(args[1]);
+	double add=a+b;
+	double sub=a-b;
+	double mul=a*b;
+	double remainder=a%b;
+	System.out.println("Addition= "+add+"Subtraction= "+sub+"Multiplication= "+mul+"Remainder= "+remainder);
+}
+---------------------------------------------------------------------------------------

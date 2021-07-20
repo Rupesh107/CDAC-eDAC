@@ -1,0 +1,8 @@
+PATH:-
+
+PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located.
+
+It specifies the directories in which executable programs* are located on the machine that can be started 
+without knowing and typing the whole path to the file on the command line. 
+
+In general, each executing process or user session has its own PATH setting.

@@ -1,0 +1,12 @@
+1)javac:-
+
+The javac command reads source files that contain module, package and type declarations written in the Java programming language, 
+and compiles them into class files that run on the Java Virtual Machine.
+
+Syntax: javac class.java
+
+2)java
+
+The java command starts a Java application. It does this by starting a Java runtime environment, loading a specified class, and calling that class's main method.
+
+Syntax: java class [arguments]
